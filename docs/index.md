@@ -1,26 +1,23 @@
 ---
 template: blog_list.html
-title: How to use Material MkDocs as a blog
+title: Tobi Kazeem's Blog | Power BI | ADF | ADX | T-SQL
 description: > 
     MkDocs is a static site generator. Material MkDocs is a theme for MkDocs.
     MkDocs has no built-in support for blogging, but it is extensible enough to easily add your own.
 ---
 
-# How to blog with [Material MkDocs](https://squidfunk.github.io/mkdocs-material/).
+# Welcome to [Tobi Kazeem](https://squidfunk.github.io/mkdocs-material/)  blog
 
-[MkDocs](https://www.mkdocs.org) is a static site generator. 
-[Material MkDocs](https://squidfunk.github.io/mkdocs-material/) is a theme for MkDocs.
-MkDocs has no built-in support for blogging, but it is extensible enough to easily add your own. 
-This repo is the experimental precursor to a MkDocs [plugin](https://www.mkdocs.org/dev-guide/plugins/), 
-if there is demand.
+This is where I share my opinion, experience and contribution as a BI Developer and Azure Data Professional
 
-:rocket: Annotate your posts with a beautiful signature!
+___Add more `tips and tricks`,  `new features` and `skill`  to your toolbox on :___
 
-:rocket: Turn any page into a list of blog posts. Checkout the [blog](/blog)! 
+- **Power BI** 
 
-:rocket: Standardize the look of each blog post with configurable metadata. Checkout a post [blog](/blog/subtopic/boring_post)! 
+- [**Azure Data Factory**](https://azure.microsoft.com/en-us/services/data-factory/) 
+  
+- **Azure Data Explorer** 
 
---- 
 
 !!! note "Like the look?"
 
