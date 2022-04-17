@@ -6,8 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Step-by-step guide to integrating the Material MkDocs blogging functionality into your own website.
-">
+        <meta name="description" content="Power BI | ADF | ADX | T-SQL">
       
       
       
@@ -16,7 +15,7 @@
     
     
       
-        <title>How to create a blog with Material MkDocs - Tobi Kazeem's Blog</title>
+        <title>Tags - Tobi Kazeem's Blog</title>
       
     
     
@@ -62,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup" class="md-skip">
+        <a href="#tags" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to create a blog with Material MkDocs
+              Tags
             
           </span>
         </div>
@@ -314,9 +313,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -815,9 +812,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -828,6 +823,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -836,69 +833,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#adf" class="md-nav__link">
+    ADF
   </a>
-  
-    <nav class="md-nav" aria-label="Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#starting-from-scratch" class="md-nav__link">
-    Starting From Scratch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-blog-to-an-existing-site" class="md-nav__link">
-    Adding A Blog To An Existing Site
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#azure" class="md-nav__link">
+    Azure
   </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-signature" class="md-nav__link">
-    Configuring The Signature
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-a-blog-list" class="md-nav__link">
-    Configuring A Blog List
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-a-blog-post" class="md-nav__link">
-    Configuring A Blog Post
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
+  <a href="#new" class="md-nav__link">
+    new
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbi" class="md-nav__link">
+    pbi
   </a>
   
 </li>
@@ -917,206 +874,29 @@
                 
 
   
-  
 
 
 
-
-  <h1>How to create a blog with Material MkDocs</h1>
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<h1 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h1>
+<p>Following is a list of relevant tags:</p>
+<h2 id="adf"><span class="md-tag">ADF</span><a class="headerlink" href="#adf" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>This template is designed to be used with Material MkDocs.</p>
-</li>
-<li>
-<p>These instructions assume some familiarity with <a href="https://www.mkdocs.org">MkDocs</a> &amp; 
-<a href="https://squidfunk.github.io/mkdocs-material/">Material MkDocs</a>.</p>
-</li>
-<li>
-<p>There are other blog plugins for MkDocs probably more useful than this.</p>
+<li><a href="../blog/ADF/2022/incremental-loading/">A simple incremental loading ADF Architecture</a></li>
+</ul>
+<h2 id="azure"><span class="md-tag">Azure</span><a class="headerlink" href="#azure" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://pypi.org/project/mkdocs-blogging-plugin/">Mkdocs Blogging Plugin</a></li>
-<li><a href="https://pypi.org/project/mkdocs-blog-plugin/">Mkdocs Blog Plugin</a></li>
-<li><a href="https://pypi.org/project/mkdocs-rss-plugin/">Mkdocs RSS Plugin</a></li>
+<li><a href="../blog/ADF/2022/incremental-loading/">A simple incremental loading ADF Architecture</a></li>
 </ul>
-</li>
-</ul>
-</div>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<h3 id="starting-from-scratch">Starting From Scratch<a class="headerlink" href="#starting-from-scratch" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Clone this repository locally.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git clone 
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span> mkdocs-blog-template
-</code></pre></div>
-</li>
-<li>
-<p>Setup Dependencies</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># recommended to use a venv.</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pip install -r requirements.txt
-</code></pre></div>
-</li>
-<li>
-<p>Add a new blog post anywhere under the <code>/blog</code> directory and append the <a href="#configuring-a-blog-post">required metadata</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># A helper command will do this for you.</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cp first_post.txt docs/blog/2021/first_post.md
-</code></pre></div>
-</li>
-<li>
-<p>Add this new post to the <code>mkdocs.yml</code> navigation configuration.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">nav</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Blog</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/index.md</span><span class="w"></span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">2021</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/2021/how_to_build_this_blog.md</span><span class="w"></span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="hll"><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/2021/first_post.md</span><span class="w"></span>
-</span><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">subtopic</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/subtopic/boring_post.md</span><span class="w"></span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/subtopic/interesting_post.md</span><span class="w"></span>
-</code></pre></div>
-</li>
-<li>
-<p><a href="#configuration">Configure</a> the templates.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">extra</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="hll"><span class="w">  </span><span class="nt">blog</span><span class="p">:</span><span class="w"></span>
-</span><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="hll"><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog</span><span class="w"></span>
-</span><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="hll"><span class="w">    </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Ryan Kelly</span><span class="w"></span>
-</span><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="hll"><span class="w">    </span><span class="nt">author_image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://avatars.githubusercontent.com/u/93479011</span><span class="w"></span>
-</span><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="hll"><span class="w">    </span><span class="nt">words_read_per_minute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">300</span><span class="w"></span>
-</span><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="hll"><span class="w">    </span><span class="nt">list_length</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">25</span><span class="w"></span>
-</span><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="hll"><span class="w">    </span><span class="nt">extended_preview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Start MkDocs and look at your new page in the browser!</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdocs serve
-</code></pre></div>
-Browser connected: <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
-</li>
-</ol>
-<h3 id="adding-a-blog-to-an-existing-site">Adding A Blog To An Existing Site<a class="headerlink" href="#adding-a-blog-to-an-existing-site" title="Permanent link">&para;</a></h3>
-<p hidden>#more</p>
-
-<ol>
-<li>Copy + Paste the directory <code>/overrides</code> into your site.</li>
-<li>Copy + Paste the directory <code>/docs/stylesheets</code> into your site.</li>
-<li>
-<p>Add the following line to your <code>theme</code> section in <code>mkdocs.yml</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="hll"><span class="w">  </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">overrides</span><span class="w"></span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Add the following line to your <code>mkdocs.yml</code> to apply the custom styles.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">extra_css</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span><span class="w"></span>
-</code></pre></div>
-</li>
-<li>
-<p><a href="#configuration">Configure</a> the templates (instructions below).</p>
-</li>
-</ol>
-<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<p>This template extension exposes the following variables to configure your blog.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">blog</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog</span><span class="w"></span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Ryan Kelly</span><span class="w"></span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="nt">author_image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://avatars.githubusercontent.com/u/93479011</span><span class="w"></span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nt">words_read_per_minute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">300</span><span class="w"></span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="nt">list_length</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">25</span><span class="w"></span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="nt">extended_preview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-</code></pre></div>
-<dl>
-<dt><code>dir</code> (optional)</dt>
-<dd>
-<p>Sets the directory where your blog posts are located (<code>blog</code>, <code>posts</code>, <code>articles</code>, etc.). Defaults to <code>blog</code>. </p>
-</dd>
-<dt><code>author</code> (optional)</dt>
-<dd>
-<p>If set, the <code>author</code> will be rendered in the <code>signature</code>.</p>
-</dd>
-<dt><code>author_image</code> (optional)</dt>
-<dd>
-<p>If set, the <code>author_image</code> will be rendered in the <code>signature</code>.</p>
-</dd>
-<dt><code>words_read_per_minute</code> (optional)</dt>
-<dd>
-<p>Used to estimate the read time in the <code>signature</code>. 
-Defaults to 300.</p>
-</dd>
-<dt><code>list_length</code> (optional)</dt>
-<dd>
-<p>Determines the number of blog posts to show in the <code>blog_list.html</code> template.
-Defaults to 25.</p>
-</dd>
-<dt><code>extended_preview</code> (optional)</dt>
-<dd>
-<p>If set, the <code>blog_list.html</code> template will render a preview of the post content.
-Any content in your blog post above the special <code>&lt;p hidden&gt;#more&lt;/p&gt;</code> tag will be shown in the preview.
-You can manually place this tag anywhere within your blog post. </p>
-</dd>
-</dl>
-<h3 id="configuring-the-signature">Configuring The Signature<a class="headerlink" href="#configuring-the-signature" title="Permanent link">&para;</a></h3>
-<p>The signature is configured by:</p>
+<h2 id="new"><span class="md-tag">new</span><a class="headerlink" href="#new" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Your Material MkDocs <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links">extra.social</a> 
-section to generate the social links.</li>
-<li>The <code>author</code> and <code>author_image</code> options from the new <a href="#configuration">configuration section</a> under <code>extra.blog</code>.</li>
+<li><a href="../blog/2021/f-test/">My Blog Features test</a></li>
 </ul>
-<h3 id="configuring-a-blog-list">Configuring A Blog List<a class="headerlink" href="#configuring-a-blog-list" title="Permanent link">&para;</a></h3>
+<h2 id="pbi"><span class="md-tag">pbi</span><a class="headerlink" href="#pbi" title="Permanent link">&para;</a></h2>
 <ul>
-<li>After following the <a href="#setup">quickstart</a>,
-add this template metadata to any page that you want to display a list of blog posts.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>---
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="gu">template: blog_list.html</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="gu">---</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>Add any markdown content here, the blog list will be displayed below it.
-</code></pre></div>
-<h3 id="configuring-a-blog-post">Configuring A Blog Post<a class="headerlink" href="#configuring-a-blog-post" title="Permanent link">&para;</a></h3>
-<ul>
-<li>After following the <a href="#setup">quickstart</a>, 
- add this template metadata to the page that you want to become a blog post.</li>
-<li>Any content in your blog post above the special <code>&lt;p hidden&gt;#more&lt;/p&gt;</code> tag will be shown in the preview.<ul>
-<li>You can manually place this tag anywhere within your blog post. </li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>---
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>template: blog_post.html
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>title: Cool post
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>description: Informative description
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="gu">date: 1984-01-01</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="gu">---</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>This content will be present in the <span class="sb">`blog_list.html`</span> template preview.
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>&lt;p hidden&gt;#more&lt;/p&gt;
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>More content
-</code></pre></div>
-<dl>
-<dt><code>title</code></dt>
-<dd>
-<p>Will be rendered in the <code>HTML</code> <code>&lt;title&gt;</code> tag, 
-and sets an <code>&lt;h2&gt;</code> tag in your blog post and blog list.</p>
-</dd>
-<dt><code>description</code></dt>
-<dd>
-<p>Will be rendered in the <code>HTML</code> <code>&lt;meta description&gt;</code> tag, 
-and sets a description under the title in your blog post and blog list.</p>
-</dd>
-<dt><code>date</code></dt>
-<dd>Expected format: <code>YYYY-MM-DD</code>, rendered in the <a href="#blog-signature">signature</a></dd>
-</dl>
-<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
-<ul>
-<li>I've used a lot of markdown extensions to document the instructions, but they aren't all required.</li>
+<li><a href="../blog/ADX/2022/pbi_with_dax/">Develop custom date range slicer in Power BI</a></li>
+<li><a href="../blog/Events/2021/pbi_with_dax/">Develop custom date range slicer in Power BI</a></li>
+<li><a href="../blog/T-SQL/2022/pbi_with_dax/">Develop custom date range slicer in Power BI</a></li>
+<li><a href="../blog/pbi/2022/pbi_with_dax/">Develop custom date range slicer in Power BI</a></li>
 </ul>
 
               
