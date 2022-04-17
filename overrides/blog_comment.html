@@ -1,8 +1,11 @@
 {% extends "base.html"  %}
 
-{% block content %}
-  {{ super() }}
 
+
+{% block content %}
+{% include "partials/blog_metadata.html" %}
+  {{ super() }}
+  <!--  -->
   <!-- Giscus -->
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <!-- Replace with generated snippet -->
@@ -48,4 +51,5 @@
       })
     })
   </script>
+  {% include "partials/blog_sub.html" %}
 {% endblock %}

@@ -15,5 +15,10 @@
   display: block;
 }
 .md-grid {
-  max-width: 800px; 
-}
+  max-width: 950px; 
+} 
+
+.alignleft border  {
+  float: left;    
+   margin: 0 15px 0 0;
+  }

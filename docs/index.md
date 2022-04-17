@@ -7,11 +7,15 @@ description: >
 hide:
   - navigation
   - toc
-tags:
-  - insiders
-  - brand new
+# tags:
+#   - insiders
+#   - brand new
+
 ---
+<!-- https://facelessuser.github.io/pymdown-extensions/ -->
 <!-- #![Logo](img/tk-logo.png) -->
+
+
 <h3 style="text-align:center; bgcolor=#f24539"><img src="img/tk-icon.png" alt="Logo" height="80" width="100"></h3>
 <!-- <img src="img/tk-logo.png" align="center"> -->
 :smile: :heart: :thumbsup:
