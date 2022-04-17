@@ -25,7 +25,7 @@ nav:
          - blog/2021/f-test.md 
   - T-SQL:
       - 2022:
-          - blog/2021/f-test.md 
+          - blog/T-SQL/2022/null-behaviour-in-tsql.md
   - Events: 
       - 2021:
           - blog/2021/f-test.md             

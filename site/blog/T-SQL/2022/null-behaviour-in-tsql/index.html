@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="As a Power BI developer, there are chances that your user one day will request for a custom date range, other than the pre-defined date period selections. This post takes you to achieve that with ease.">
+        <meta name="description" content="SQL Server uses 3- way logic. Every logical expression evaluates to TRUE, FALSE or UNKNOWN (null). Whenever an unknown value is used in an expression, it evaluates to unknown.">
       
       
       
@@ -15,7 +15,7 @@
     
     
       
-        <title>Develop custom date range slicer in Power BI - Tobi Kazeem's Blog</title>
+        <title>SQL Server 3-way Logic - Tobi Kazeem's Blog</title>
       
     
     
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Develop custom date range slicer in Power BI
+              SQL Server 3-way Logic
             
           </span>
         </div>
@@ -248,6 +248,8 @@
         
   
   
+    
+  
 
 
   
@@ -259,7 +261,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../2021/f-test/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         T-SQL
       </a>
     </li>
@@ -625,12 +627,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -655,14 +659,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" checked>
       
       
       
@@ -687,11 +693,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../2021/f-test/" class="md-nav__link">
-        None
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        SQL Server 3-way Logic
       </a>
+      
     </li>
   
 
@@ -880,14 +894,12 @@
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0zm-3.5 4.5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25H3.25zM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25V9.5z"/></svg>
       </span>
-      January 17, 2022 ·
+      November 12, 2021 ·
       <span class="twemoji">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg>
       </span>
       <!--Min reading time is 1 minute-->
       
-      
-        
       
       1 min read
     </span>
@@ -903,8 +915,8 @@
   <nav class="md-tags" >
     
       
-        <a href="../../../../tags/#pbi" class="md-tag">
-          pbi
+        <a href="../../../../tags/#t-sql" class="md-tag">
+          T-SQL
         </a>
       
     
@@ -912,19 +924,34 @@
 
 
 
-  <h1>Develop custom date range slicer in Power BI</h1>
+  <h1>SQL Server 3-way Logic</h1>
 
-<p>Supercharge your #powerbi report with #dax </p>
-<p>Just a few days ago while doing the final functional review with a client on a #powerbi project, the client requested for something funny but sincerely it really makes a lot of  sense :</p>
-<p>"custom date slicer with default date to  Today" i.e. By default when the user sign in to view the report, it will be filter to the current date and the same slicer can be used to change to any custom date range. </p>
+<p>SQL Server 3-way Logic</p>
+<p>Presume that your customer detail form allow that customer to decide if he or she will fill her phoen number, meaning the phone number is optional.  What does it mean 
+if the customer does not enter a phone number and the table ends up with NULL in the 
+PhoneNumber column of the Customer table? Does it mean that the customer does not 
+have a phone? That’s one possibility</p>
 <p hidden>#more</p>
 
-<p>My colleague said "that should be easy to do sir" but immediately  I replied this is the toughest request will have received on this project.</p>
-<p>After further research, my colleague came back very sad that no such functionality exist in #powerbi  by default. Without this functionality the client will refused to sign off the project.</p>
-<p>Fortunately after few hours of meditation , I came with the solution using #dax code and some report filtering functionality in #powerbi.</p>
-<p>The Lesson: Learn to supercharge your #powerbi with #dax , you are only using 40% of #powerbi functionality without #dax. #dax has helped me to solved most of the request will received from client.</p>
-<p><img alt="img" src="https://media-exp1.licdn.com/dms/image/C4D22AQFqyyOezRhbkw/feedshare-shrink_800/0/1643441162639?e=2147483647&amp;v=beta&amp;t=-GjmnH7eGjS7NDQp0Z6MWO4OYn6FPnHreDLHz1GU9fA" /></p>
-<p><img alt="img" src="https://media-exp1.licdn.com/dms/image/C4D22AQFQ5XUT2tlQhg/feedshare-shrink_800/0/1643441162676?e=2147483647&amp;v=beta&amp;t=YM7-IcCF_8n3QQLO7NApyn7vCSBfoQLIrrpN8H9-4aY" /></p>
+<p>More possibility might occur, the customer might have phone number but decide to ascond your request for her phone number. 
+<br>
+As a data analyst, you are given a list of phone number to find if the customer number match any of them. To your surprise, your ssearch will return <strong><em>no match</em></strong> because you are searching for unknown value.
+<br>
+Usually, comparing the data in a column to a value or comparing the values from 
+two columns returns either TRUE or FALSE. If the expression in the WHERE clause evaluates 
+to TRUE, then the row is returned. If the expression evaluates to FALSE, then the row is 
+not returned. 
+<br>
+If a value in the expression contains NULL, then the expression is resolved 
+to UNKNOWN. In some ways, the behavior is like FALSE. When an expression resolves to 
+UNKNOWN, the row is not returned. The problems begin when using any operator except 
+for equal to (=). The opposite of FALSE is TRUE, but the opposite of UNKNOWN is still 
+UNKNOWN.</p>
+<p>To test for a NULL, you will want to use the IS [NOT] NULL expression. 
+Additionally, you may want to change a NULL to a value like an empty string (''). 
+The function ISNULL will replace a NULL value with another value specified in the 
+query.</p>
+<p><img alt="img" src="https://media-exp1.licdn.com/dms/image/C4D22AQGXYgfBvz8ldQ/feedshare-shrink_800/0/1637077110543?e=2147483647&amp;v=beta&amp;t=qsFYbzhVAeJwj_b55zMGB0Q46ofrw7_0Cixv09cYy9w" /></p>
 
               
   <!--  -->
@@ -995,6 +1022,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../../2021/f-test/" class="md-footer__link md-footer__link--prev" aria-label="Previous: None" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              None
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../2021/f-test/" class="md-footer__link md-footer__link--next" aria-label="Next: My Blog Features test" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              My Blog Features test
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
