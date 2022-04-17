@@ -4,13 +4,16 @@
   font-size: 13.6px;
 }
 .mdx-author img {
-  height: 40px;
+  height: 20px;
   border-radius: 100%;
 }
 .mdx-author p:first-child {
   flex-shrink: 0;
-  margin-right: 16px;
+  margin-right: 12px;
 }
 .mdx-author p > span {
   display: block;
+}
+.md-grid {
+  max-width: 800px; 
 }

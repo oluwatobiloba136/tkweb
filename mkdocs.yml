@@ -1,8 +1,8 @@
-site_name: Material MkDocs Blog
-site_description: How to use Material MkDocs as a blog.
-copyright: Copyright &copy; 2021 Ryan Kelly
+site_name: Tobi Kazeem's Blog
+site_description: Power BI | ADF | ADX | T-SQL
+copyright: Copyright &copy; 2022 Tobi Kazeem
 
-repo_url: https://github.com/4kelly/material-mkdocs-blog
+# repo_url: https://github.com/oluwatobiloba136/tkweb
 
 extra_css:
   - stylesheets/extra.css
@@ -32,32 +32,39 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: red
-      accent: pink
+      primary: deep purple
+      accent: white
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
     - navigation.instant
     - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.sections
+    - search.highlight
+    # - header.autohide
 
 plugins:
   - search
+  - tags
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/4kelly
+      link: https://github.com/oluwatobiloba136
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/4kelly_
-    - icon: fontawesome/brands/medium
-      link: https://medium.com/@4kelly
+      link: https://twitter.com/Oluwatobi136
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tobi-kazeem-372b1b110/
     - icon: material/email
-      link: mailto:web@4kelly.com
+      link: mailto:tobi.kazeem@outlook.com
   blog:
     dir: blog
-    author: Ryan Kelly
-    author_image: https://avatars.githubusercontent.com/u/93479011
+    author: Tobi Kazeem
+    author_image: https://avatars.githubusercontent.com/u/40205428?v=4
     words_read_per_minute: 300
     list_length: 25
     extended_preview: true

@@ -1,5 +1,5 @@
 ---
-template: blog_post.html
+template: blog_comment.html
 title: Captivating Content
 description: These are some ways to cook with fire outside.
 date: 2021-11-01
