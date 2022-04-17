@@ -14,14 +14,29 @@ extra_javascript:
 nav:
   # - Me: test.md
   - Home:  index.md
-  - Blog:
-      - blog/index.md
+  - Power BI: 
+      - 2022:
+          - blog/pbi/2022/pbi_with_dax.md
+  - ADF: 
+      - 2022:
+          - blog/ADF/2022/incremental-loading.md      
+  - ADX:
+      - 2022:
+         - blog/2021/f-test.md 
+  - T-SQL:
+      - 2022:
+          - blog/2021/f-test.md 
+  - Events: 
       - 2021:
-          - blog/2021/core-web-vitals.md
-          - blog/2021/f-test.md
-      - Subtopic:
-          - blog/subtopic/interesting-post.md
-  - Setup Instructions: setup.md
+          - blog/2021/f-test.md             
+  # - Blog:
+  #     - blog/index.md
+  #     - 2021:
+  #         - blog/2021/core-web-vitals.md
+  #         - blog/2021/f-test.md
+  #     - Subtopic:
+  #         - blog/subtopic/interesting-post.md
+  # - Setup Instructions: setup.md
 theme:
   custom_dir: overrides
   name: material
@@ -65,7 +80,7 @@ theme:
     - search.highlight
     - content.tabs.link
     # - announce
-    # - header.autohide
+    - header.autohide
 
 plugins:
   - search
