@@ -19,7 +19,8 @@ nav:
           - blog/pbi/2022/pbi_with_dax.md
   - ADF: 
       - 2022:
-          - blog/ADF/2022/incremental-loading.md      
+          - blog/ADF/2022/incremental-loading.md
+          - blog/ADF/2022/pbi-report-for-ADF.md     
   - ADX:
       - 2022:
          - blog/2021/f-test.md 
